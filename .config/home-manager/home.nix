@@ -27,6 +27,8 @@
     go
     go-task
     neofetch
+    obsidian
+    scrot
     yarn
 
 
