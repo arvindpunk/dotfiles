@@ -16,6 +16,9 @@
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
+        config.permittedInsecurePackages = [
+          "electron-24.8.6"
+        ];
       };
     in {
       homeConfigurations."arvindpunk" = home-manager.lib.homeManagerConfiguration {

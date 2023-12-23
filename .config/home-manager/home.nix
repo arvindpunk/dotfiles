@@ -22,11 +22,11 @@
     brightnessctl
     discord
     duf
-    elixir
     firefox
     go
     go-task
     neofetch
+    nixfmt
     obsidian
     scrot
     yarn
