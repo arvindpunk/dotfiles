@@ -29,7 +29,6 @@
     nixfmt
     obsidian
     scrot
-    yarn
 
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
