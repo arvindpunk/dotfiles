@@ -3,9 +3,10 @@
 
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs";
+
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -18,12 +19,12 @@
         config.allowUnfree = true;
         config.permittedInsecurePackages = [
           "electron-24.8.6"
+          "adobe-reader-9.5.5"
         ];
       };
     in {
       homeConfigurations."arvindpunk" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
         modules = [ ./home.nix ];
