@@ -17,22 +17,25 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    adobe-reader
     autorandr
-    brightnessctl
-    discord
-    duf
-    firefox
-    go
-    gotop
-    neofetch
-    nixfmt
-    obsidian
-    scrot
     awscli2
-    redis
+    ssm-session-manager-plugin
+    brightnessctl
+    jetbrains.datagrip
+    difftastic
+    duf
+    gh
+    go
+    neovim    
+    inkscape
+    ngrok
+    obsidian
+    nixfmt
+    elixir
+    erlang
+    scrot
+    opentofu
   ];
-
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
